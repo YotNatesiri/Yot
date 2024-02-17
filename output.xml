@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-16T18:28:40.201465" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\PalmRF\shopee\testcase\Test.robot">
+<test id="s1-t1" name="Search case" line="21">
+<kw name="เปิดเว็บ google.com" owner="keyword">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-02-16T18:28:40.408320" level="INFO">Opening browser 'chrome' to base url 'https://google.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-16T18:28:40.408320" elapsed="2.784129"/>
+</kw>
+<status status="PASS" start="2024-02-16T18:28:40.407343" elapsed="2.785106"/>
+</kw>
+<kw name="ค้นหาตาม keywords" owner="keyword">
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-16T18:28:43.193426" level="INFO">Typing text 'Podcasts ไทย' into text field 'name=q'.</msg>
+<arg>name=q</arg>
+<arg>${expected_result}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-16T18:28:43.193426" elapsed="0.087944"/>
+</kw>
+<kw name="Submit Form" owner="Selenium2Library">
+<msg time="2024-02-16T18:28:43.282347" level="INFO">Submitting form 'None'.</msg>
+<doc>Submits a form identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-16T18:28:43.281370" elapsed="0.132890"/>
+</kw>
+<status status="PASS" start="2024-02-16T18:28:43.192449" elapsed="0.221811"/>
+</kw>
+<kw name="รอผลลัพธ์" owner="keyword">
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${expected_result}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-16T18:28:43.415238" elapsed="0.940102"/>
+</kw>
+<status status="PASS" start="2024-02-16T18:28:43.414260" elapsed="0.941080"/>
+</kw>
+<status status="PASS" start="2024-02-16T18:28:40.407343" elapsed="3.948973"/>
+</test>
+<status status="PASS" start="2024-02-16T18:28:40.203419" elapsed="4.153875"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

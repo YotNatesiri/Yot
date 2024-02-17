@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-16T23:31:47.737016" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\PalmRF\shopee\result\..\testcase\Test.robot">
+<test id="s1-t1" name="ฺีVerify payment detail when select product with use free delivery and payment by promptpay" line="21">
+<kw name="Login account shopee" owner="keyword">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-02-16T23:31:47.958826" level="INFO">Opening browser 'chrome' to base url 'https://shopee.co.th/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-16T23:31:47.958826" elapsed="4.200734"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="Selenium2Library">
+<arg>${thai_lang_button}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-16T23:31:52.159560" elapsed="0.564115"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-16T23:31:58.725397" level="INFO">Slept 6 seconds.</msg>
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-16T23:31:52.723675" elapsed="6.001722"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2024-02-16T23:31:58.725397" level="INFO">Clicking button '//button[contains(text(),'ไทย')]'.</msg>
+<arg>${thai_lang_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-16T23:31:58.725397" elapsed="0.057103"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-16T23:32:08.782905" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-16T23:31:58.782500" elapsed="10.000405"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-02-16T23:32:08.782905" level="INFO">Clicking element '//input[@placeholder='หมายเลขโทรศัพท์ / Email / ชื่อผู้ใช้']'.</msg>
+<arg>${input_username}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-16T23:32:08.782905" elapsed="0.044950"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-16T23:32:08.827855" level="INFO">Typing text 'testaionepm' into text field '//input[@placeholder='หมายเลขโทรศัพท์ / Email / ชื่อผู้ใช้']'.</msg>
+<arg>${input_username}</arg>
+<arg>${usename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-16T23:32:08.827855" elapsed="0.069174"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-02-16T23:32:08.898006" level="INFO">Clicking element '//input[@placeholder='รหัสผ่าน']'.</msg>
+<arg>${input_password}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-16T23:32:08.898006" elapsed="0.049594"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-16T23:32:08.948577" level="INFO">Typing text 'Tdexrox12345' into text field '//input[@placeholder='รหัสผ่าน']'.</msg>
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-16T23:32:08.947600" elapsed="0.088192"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2024-02-16T23:32:09.036768" level="INFO">Clicking button '//button[contains(text(),'เข้าสู่ระบบ')]'.</msg>
+<arg>${Login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-16T23:32:09.035792" elapsed="0.065570"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-16T23:32:19.101831" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-16T23:32:09.101362" elapsed="10.000469"/>
+</kw>
+<status status="PASS" start="2024-02-16T23:31:47.957849" elapsed="31.143982"/>
+</kw>
+<kw name="Select category is shoes">
+<msg time="2024-02-16T23:32:19.103769" level="FAIL">No keyword with name 'Select category is shoes' found.</msg>
+<status status="FAIL" start="2024-02-16T23:32:19.103769" elapsed="0.000000">No keyword with name 'Select category is shoes' found.</status>
+</kw>
+<status status="FAIL" start="2024-02-16T23:31:47.956871" elapsed="31.146898">No keyword with name 'Select category is shoes' found.</status>
+</test>
+<status status="FAIL" start="2024-02-16T23:31:47.738970" elapsed="31.365776"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
